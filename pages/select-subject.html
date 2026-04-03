@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../src/style.css">
+  </head>
+  <body class="wrapper">
+    <h2 class="center">JavaScript Quiz Game</h2>
+    <p class="center">Student #2420045</p>
+    <div class="container center">
+      <div class="expanding container center">
+        <h1>Select Subject!</h1>
+        <div class="row">
+          <a href="#play" id="subject-select-0" onclick="setting('subject-select-', 0, 4, 'selected', 'subject', 'HTML')" class="button-class">HTML</a>
+          <a href="#play" id="subject-select-1" onclick="setting('subject-select-', 1, 4, 'selected', 'subject', 'CSS')" class="button-class">CSS</a>
+          <a href="#play" id="subject-select-2" onclick="setting('subject-select-', 2, 4, 'selected', 'subject', 'JavaScript')" class="button-class">JavaScript</a>
+          <a href="#play" id="subject-select-3" onclick="setting('subject-select-', 3, 4, 'selected', 'subject', 'Mixed')" class="button-class">Mixed</a>
+        </div>
+      </div>
+      <div class="container center"></div>
+      <div class="center row expandable" id="play">
+        <a href="play.html" class="button-class">Play</a>
+        <a href="../index.html" class="button-class">Back</a>
+      </div>
+    </div>
+  </body>
+  <script src="../src/utils.js">
+  </script> 
+</html>

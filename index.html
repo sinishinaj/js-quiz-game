@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="src/style.css">
+  </head>
+  <body class="wrapper">
+    <h2 class="center">JavaScript Quiz Game</h2>
+    <p class="center">Student #2420045</p>
+    <div class="container center">
+      <div class="expanding container center">
+        <h1>Select Number of Players!</h1>
+        <div class="row">
+          <a id="player-select-0" onclick="setting('player-select-', 0, 4, 'selected', 'playerAmount', 1)" href="#questions" class="button-class player-select">1 Player</a>
+          <a id="player-select-1" onclick="setting('player-select-', 1, 4, 'selected', 'playerAmount', 2)" href="#questions" class="button-class player-select">2 Players</a>
+          <a id="player-select-2" onclick="setting('player-select-', 2, 4, 'selected', 'playerAmount', 3)" href="#questions" class="button-class player-select">3 Players</a>
+          <a id="player-select-3" onclick="setting('player-select-', 3, 4, 'selected', 'playerAmount', 4)" href="#questions" class="button-class player-select">4 Players</a>
+        </div>
+      </div>
+      <div class="expandable container center" id="questions">
+        <h1>Select Difficulty!</h1>
+        <div class="row">
+          <a id="question-select-0" onclick="showNext(); setting('question-select-', 0, 4, 'selected', 'questionAmount', 3)" class="button-class">3 Questions</a>
+          <a id="question-select-1" onclick="showNext(); setting('question-select-', 1, 4, 'selected', 'questionAmount', 2)" class="button-class">2 Questions</a>
+          <a id="question-select-2" onclick="showNext(); setting('question-select-', 2, 4, 'selected', 'questionAmount', 4)" class="button-class">4 Questions</a>
+          <a id="question-select-3" onclick="showNext(); setting('question-select-', 3, 4, 'selected', 'questionAmount', 5)" class="button-class">5 Questions</a>
+        </div>
+      </div>
+      <div class="center row">
+        <a id="next" href="pages/select-subject.html" class="button-class expandable">Next</a>
+      </div>
+    </div>
+  </body>
+  <script src="src/utils.js">
+    http.createServer(function (req, res) {
+      var index = fs.readFileSync('index.html', 'utf8');
+      res.writeHead(200, {'Content-Type': 'html'});
+      res.end(index);
+    }).listen(3000);
+  </script>
+</html>

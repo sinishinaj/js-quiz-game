@@ -1,0 +1,143 @@
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+body{
+  background: whitesmoke;
+}
+.wrapper {
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin: 2px;
+}
+
+p {
+  margin: 2px;
+}
+
+.container{
+  background: white;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 800px;
+  padding: 20px;
+}
+
+.no-flex-container{
+  background: white;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  padding: 20px;
+}
+
+.center {
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.button-class {
+  background-color: whitesmoke;
+  /* Green */
+  border: 1px solid black;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  min-width: 80px;
+}
+
+.selected {
+  background-color: black;
+  color : white;
+}
+
+.button-class:hover {
+  background-color: gray;
+  color: white;
+}
+
+.answer {
+  width: 100%;
+  padding: 10px;
+}
+
+.expandable {
+  background: #fff;
+  overflow: hidden;
+  color: #000;   
+  transition: all .5s ease-in-out;
+  transform-origin: left top;
+  transform: scaleY(0);
+ }
+
+ .shrinkable {
+  background: #fff;
+  overflow: hidden;
+  color: #000;   
+  transition: all .5s ease-in-out;
+  transform-origin: left top;
+  transform: scaleY(0);
+  transform: scaleX(0);
+ }
+
+.expandable:target {
+  transform: scaleY(1);
+}
+
+.expanding {
+  animation: expand 1s;
+}
+
+@keyframes expand {
+  0% {
+    background: #fff;
+    overflow: hidden;
+    color: #000;   
+    transition: all .5s ease-in-out;
+    transform-origin: left top;
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.blue {
+  background-color: blue;
+  color: white;
+  font-weight: 700;
+}
+.red {
+  background-color: red;
+  color: white;
+  font-weight: 700;
+}
+.green {
+  background-color: green;
+  color: white;
+  font-weight: 700;
+}
+.orange {
+  background-color: orange;
+  color: white;
+  font-weight: 700;
+}

@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../src/style.css">
+  </head>
+  <body class="wrapper">
+    <h2 class="center">JavaScript Quiz Game</h2>
+    <p class="center">Student #2420045</p>
+    <div class="container center">
+      <div class="expanding container center">
+        <h1 id='player' style="width:100%">It's Player 1's turn.</h1>
+        <h2 id='time' style="width:100%">Begin!</h2>
+      </div>
+      <div class="expanding container center">
+        <h3 id="question">What makes you so amazing?</h3>
+      </div>
+      <a id="answer-select-0" onclick="selectAnswer(0);" class="button-class answer">Answer 1</a>
+      <a id="answer-select-1" onclick="selectAnswer(1);" class="button-class answer">Answer 2</a>
+      <a id="answer-select-2" onclick="selectAnswer(2);" class="button-class answer">Answer 3</a>
+      <a id="answer-select-3" onclick="selectAnswer(3);" class="button-class answer">Answer 4</a>
+      <a id="submit" onclick="submit();" class="button-class">Submit</a>
+    </div>
+  </body>
+  <script src="../src/main.js"></script>
+</html>
