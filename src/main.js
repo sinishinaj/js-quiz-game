@@ -312,8 +312,6 @@ let data = {
        }
    ] 
 };
-
-console.log(data);
 const subject = localStorage.getItem("subject");
 const players = localStorage.getItem("playerAmount");
 const questionsAmount = localStorage.getItem("questionAmount");
